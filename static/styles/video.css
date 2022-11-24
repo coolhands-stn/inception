@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+body::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 5;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+
+    background-color: transparent;
+    padding: 10px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > p {
+    font-family: "Marhey", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #FFF;
+    cursor: pointer;
+}
+
+nav > span {
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    height: 40px;
+    width: 120px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #0058FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > span:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    object-fit: cover;
+}
+
+
+#wb-content {
+    position: absolute;
+    z-index: 10;
+
+    top: 50vh;
+    bottom: 50vh;
+    left: 10px;
+
+    width: 100vw;
+
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#upload-video,
+#image-listing {
+    height: 50px;
+    width: 50px;
+
+    background-color: #0058FF;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#image-listing {
+    display: none;
+}
+
+#upload-video:hover,
+#image-listing:hover {
+    transform: translateY(-5px)
+}
+
+.fa-solid {
+    color: #FFF;
+}
+
+#view-image-listing {
+    height: 120px;
+    width: 87px;
+
+    border: none;
+    border-radius: 4px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    margin: 0 0 0 50px;
+
+    background-color: rgba(14,19,24,0.8);
+}
+
+.fa-images { 
+    color: #FFF;
+}
+
+#wb-content-controls {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+
+    height: 150px;
+}
+
+.fa-badge-check {
+    color: #FFF;
+    margin-right: 7px;
+}
