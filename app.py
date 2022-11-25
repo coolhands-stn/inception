@@ -9,7 +9,7 @@ import numpy as np
 
 import os
 import cv2
-import  imutils
+import imutils
 
 
 # Loading images to frontend
