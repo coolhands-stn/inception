@@ -25,14 +25,14 @@ video = st.file_uploader(label="upload video", type="mp4", key="video_upload_fil
 
 # Continue only if video is uploaded successfully
 if(video is not None):
-    if os.path.exists("frames"):
-        os.rmdir("frames")
-    if os.path.exists("resized"):
-        os.rmdir("resized")
+    # Delete pre-existing directories and their content
+    os.rmdir("frames")
+    os.rmdir("resized")
 
-    # Re create dirs
+    # Create empty dirs 
     os.makedirs("frames")
     os.makedirs("resized")
+
     # Notify user
     st.text("video has been uploaded")
     # Gather video meta data
