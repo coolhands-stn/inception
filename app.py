@@ -8,6 +8,9 @@ import tensorflow as tf
 import numpy as np
 
 import os
+import cv2
+import imutils
+
 
 # Loading images to frontend
 def load_image(image_file):
