@@ -107,6 +107,7 @@ if(video is not None):
 
             for frame in frame_paths:
                 image = cv2.imread(frame)
+                image = np.expand_dims(image, axis=0)
                 query_frames_array.append(image)
             return np.array(query_frames_array)
 
