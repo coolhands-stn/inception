@@ -17,6 +17,10 @@ def load_image(image_file):
 	img = Image.open(image_file)
 	return img
 
+st.text("Stany Ganyani R204442S")
+st.text("Tungamiraishe Mukwena R204452G")
+
+
 # User search query
 search_query = st.text_input("enter object to query", "search query",key="search_query" )
 
@@ -25,14 +29,6 @@ video = st.file_uploader(label="upload video", type="mp4", key="video_upload_fil
 
 # Continue only if video is uploaded successfully
 if(video is not None):
-    # # Delete pre-existing directories and their content
-    # os.rmdir("frames")
-    # os.rmdir("resized")
-
-    # Create empty dirs 
-    # os.makedirs("frames")
-    # os.makedirs("resized")
-
     # Notify user
     st.text("video has been uploaded")
     # Gather video meta data
