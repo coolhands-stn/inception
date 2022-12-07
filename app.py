@@ -30,8 +30,8 @@ if(video is not None):
     # os.rmdir("resized")
 
     # Create empty dirs 
-    os.makedirs("frames")
-    os.makedirs("resized")
+    # os.makedirs("frames")
+    # os.makedirs("resized")
 
     # Notify user
     st.text("video has been uploaded")
