@@ -25,9 +25,9 @@ video = st.file_uploader(label="upload video", type="mp4", key="video_upload_fil
 
 # Continue only if video is uploaded successfully
 if(video is not None):
-    # Delete pre-existing directories and their content
-    os.rmdir("frames")
-    os.rmdir("resized")
+    # # Delete pre-existing directories and their content
+    # os.rmdir("frames")
+    # os.rmdir("resized")
 
     # Create empty dirs 
     os.makedirs("frames")
